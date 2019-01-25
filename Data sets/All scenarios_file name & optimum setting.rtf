@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg932\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19540\viewh15080\viewkind0
+\deftab543
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \CocoaLigature0 In the \'93All scenarios\'94 folder, each file name represents adaptation scheme (scenario #.#) and mutation size (r=#.##).\
+Scenario ID corresponds to different adaptation schemes as follows.\
+\
+\
+/* Scenario & Optimum setting in C++ codes */\
+Scenario 1.1 Mutation-order speciation\
+traitopt1[0]=2.0;\
+traitopt2[0]=2.0;\
+\
+Scenario 2.1 Changing environment=Slow\
+initial traitopt1[0]=0.0;\
+nextopt=2.0; (endpoint)\
+double speed=nextopt/(double)(tau2-tau1); //speed of environnmental change\
+tau1=0\
+tau2=100\
+\
+Scenario 2.2 Changing environment=Medium\
+initial traitopt1[0]=0.0;\
+nextopt=2.0; (endpoint)\
+double speed=nextopt/(double)(tau2-tau1); //speed of environnmental change\
+tau1=0\
+tau2=50\
+\
+Scenario 2.3 Changing environment=Fast\
+initial traitopt1[0]=0.0;\
+nextopt=2.0; (endpoint)\
+double speed=nextopt/(double)(tau2-tau1); //speed of environnmental change\
+tau1=0\
+tau2=20\
+    \
+Scenario 3.1 Ecological speciation=(pi/6)\
+traitopt1[0]=-sqrt(2.0-sqrt(3.0));\
+traitopt2[0]=sqrt(2.0-sqrt(3.0));\
+traitopt1[1]=-sqrt(2.0+sqrt(3.0));\
+traitopt2[1]=-sqrt(2.0+sqrt(3.0));\
+    \
+Scenario 3.2 Ecological speciation=(pi/4)\
+traitopt1[0]=-sqrt(2.0-sqrt(2.0));\
+traitopt2[0]=sqrt(2.0-sqrt(2.0));\
+traitopt1[1]=-sqrt(2.0+sqrt(2.0));\
+traitopt2[1]=-sqrt(2.0+sqrt(2.0));\
+\
+Scenario 3.3 Ecological speciation=(pi/2)\
+traitopt1[0]=-sqrt(2.0);\
+traitopt2[0]=sqrt(2.0);\
+traitopt1[1]=-sqrt(2.0);\
+traitopt2[1]=-sqrt(2.0);\
+    \
+Scenario 3.4 Ecological speciation=(pi)\
+traitopt1[0]=-2.0;\
+traitopt2[0]=2.0;}
