@@ -15,7 +15,7 @@ return(c(y=m,ymin=ymin,ymax=ymax))\
 \}\
 \
 \
-Figure 3\
+Figure 2\
 > data<-read.csv(\'93~/Desktop/Figure3_Haploid.csv",header=T)\
 > data2=transform(data, Hybrid.Type= factor(Hybrid.Type, levels = c("Pop1", "BC1", "F1", "F2")))\
 > ggplot(data2, aes(x=Hybrid.Type, y=Fitness)) + geom_violin(trim=T, fill="white",scale="width") + stat_summary(fun.data=data_summary,geom="pointrange") + stat_summary(fun.y=mean, geom="point",fill="white",shape=21, size=2) + theme_classic() + labs(y = "Fitness") + ylim(0,1) + coord_fixed(ratio=15)\
@@ -25,7 +25,7 @@ Figure 3\
 > ggplot(data2, aes(x=Hybrid.Type, y=Fitness)) + geom_violin(trim=T, fill="white",scale="width") + stat_summary(fun.data=data_summary,geom="pointrange") + stat_summary(fun.y=mean, geom="point",fill="white",shape=21, size=2) + theme_classic() + labs(y = "Fitness") + ylim(0,1) + coord_fixed(ratio=15)\
 \
 \
-Figure 4\
+Figure 3\
 > data<-read.csv("~/Desktop/Figure4a_Haploid.csv",header=T)\
 > data2=transform(data, Hybrid.Type= factor(Hybrid.Type, levels = c("Pop1small", "Pop1medium", "Pop1large", "F1small", "F1medium", "F1large")))\
 > ggplot(data2, aes(x=Hybrid.Type, y=Fitness)) + geom_violin(trim=T, fill="white",scale="width") + stat_summary(fun.data=data_summary,geom="pointrange") + stat_summary(fun.y=mean, geom="point",fill="white",shape=21, size=2) + theme_classic() + labs(y = "Fitness") + ylim(0,1) + coord_fixed(ratio=15)\
@@ -43,12 +43,12 @@ Figure 4\
 > ggplot(data2, aes(x=Hybrid.Type, y=Fitness)) + geom_violin(trim=T, fill="white",scale="width") + stat_summary(fun.data=data_summary,geom="pointrange") + stat_summary(fun.y=mean, geom="point",fill="white",shape=21, size=2) + theme_classic() + labs(y = "Fitness") + ylim(0,1) + coord_fixed(ratio=15)\
 \
 \
-Figure 5\
+Figure 4\
 > data<-read.csv("~/Desktop/Figure5_Haploid_01.csv",header=T)\
 > data2=transform(data, Environment= factor(Environment, levels = c("AE_0", "AE_30", "AE_45", "AE_90", "AE_180")))\
 > ggplot(data2, aes(x=Environment, y=Indicator)) + geom_violin(trim=T, fill="white",scale="width") + stat_summary(fun.data=data_summary,geom="pointrange") + stat_summary(fun.y=mean, geom="point",fill="white",shape=21, size=2) + theme_classic() + labs(y = "Indicator") + ylim(0,1) + coord_fixed(ratio=15)\
 \
-Figure 6\
+Figure 5\
 > data<-read.csv("~/Desktop/Figure6_Haploid_all.csv",header=T)\
 > data2=transform(data, Hybrid.Type= factor(Hybrid.Type, levels = c("Pop1(1,10)", "Pop1(2,5)", "Pop1(5,2)", "Pop1(10,1)", "F1(1,10)", "F1(2,5)", "F1(5,2)", "F1(10,1)")))\
 > ggplot(data2, aes(x=Hybrid.Type, y=Fitness)) + geom_violin(trim=T, fill="white",scale="width") + stat_summary(fun.data=data_summary,geom="pointrange") + stat_summary(fun.y=mean, geom="point",fill="white",shape=21, size=2) + theme_classic() + labs(y = "Fitness") + ylim(0,1) + coord_fixed(ratio=15)}
